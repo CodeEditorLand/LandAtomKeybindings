@@ -1,9 +1,32 @@
 {
 	"name": "atom-keybindings",
 	"displayName": "Atom Keymap",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Popular Atom keybindings for Visual Studio Code",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandAtomKeybindings#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandAtomKeybindings/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandAtomKeybindings.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"scripts": {
-		"open-in-browser": "vscode-test-web --extensionDevelopmentPath=. ."
+		"open-in-browser": "vscode-test-web --extensionDevelopmentPath=. .",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"contributes": {
 		"configurationDefaults": {
@@ -533,7 +556,11 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@codeeditorland/test-web": "0.0.1"
+		"@codeeditorland/test-web": "0.0.1",
+		"@playform/build": "0.2.1"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"icon": "atom-keyboard-padded.png",
 	"preview": true,
